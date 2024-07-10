@@ -23,22 +23,28 @@ nav{
     text-transform: uppercase;
     border: 20px;
 }
-#box1{
+.box{
     display: fixed;
     width: 100px;
     height: 100px;
     background-color: blueviolet;
     border:50px;
     margin: 5px;
+    display: inline-block;
 
 }
 #container{
     border: 3px solid;
     margin: 5px;
+    right: 10px;
 }
 #box{
-    background-color: rgb(159, 204, 36);
-    display: inline;
-    
-    
+    height: 100px;
+    width: 100px;
+    background-color: burlywood;
 }
+
+    @media screen and(min-width: 300px) {
+        .box{
+            border: 5px solid blueviolet;
+        }
